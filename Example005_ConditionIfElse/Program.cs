@@ -1,4 +1,4 @@
-﻿Console.Write("Введите имя пользователя: ");
+﻿Console.Write("""Введите имя пользователя: """);
 string? name = Console.ReadLine();
 
 if (name.ToLower() == "маша")
@@ -8,6 +8,6 @@ if (name.ToLower() == "маша")
 
 else
 {
-    Console.Write("Привет,");
+    Console.Write("Привет, ");
     Console.WriteLine(name);
 }
