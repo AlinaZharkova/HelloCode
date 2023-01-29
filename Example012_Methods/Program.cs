@@ -5,14 +5,16 @@ void Method1()
 {
     System.Console.WriteLine("Автор ...");
 }
-//Method1();
+Method1();
+
 
 //Вид 2 (что-то принимает на вход, но ничего не возвращает)
 void Method2(string msg)
 {
     System.Console.WriteLine(msg);
 }
-//Method2("Текст сообщения");
+Method2("Текст сообщения");
+
 
 //еще один пример 2 вида функций  с использованием именованных аргументов
 void Method21(string msg, int count)
@@ -24,7 +26,8 @@ void Method21(string msg, int count)
         i++;
     }
 }
-//Method21(count:4, msg:"Текст");
+Method21(count:4, msg:"Текст");
+
 
 //Вид 3 (ничего не принимает, но что-то возвращает)
 int Method3()
@@ -32,7 +35,7 @@ int Method3()
     return DateTime.Now.Year;
 }
 int year = Method3();
-//System.Console.WriteLine(year);
+System.Console.WriteLine(year);
 
 
 //Вид 4 (что-то принимает, что-то возвращает)
@@ -48,7 +51,8 @@ string Method4(int count, string c)
     return result;
 }
 string res = Method4(10, "asdf");
-//System.Console.WriteLine(res);
+System.Console.WriteLine(res);
+
 
 //Перепишем 4 вид функции с помощью цикла FOR
 string Method41(int count, string text)
@@ -61,16 +65,16 @@ string Method41(int count, string text)
     return result;
 }
 string res1 = Method41(10, "z");
-//System.Console.WriteLine(res1);
+System.Console.WriteLine(res1);
 
 //Использование цикла в цикле (вывод таблицы умножения на экран)
 for (int i = 2; i <= 10; i++)
 {
     for (int j = 2; j <= 10; j++)
     {
-        //  System.Console.WriteLine($"{i}x{j}={i*j}");   
+          System.Console.WriteLine($"{i}x{j}={i*j}");   
     }
-    // System.Console.WriteLine();
+     System.Console.WriteLine();
 }
 
 //Дан текст. В тексте нужно все пробелы заменить на черточки, 
